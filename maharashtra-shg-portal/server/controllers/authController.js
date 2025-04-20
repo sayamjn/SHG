@@ -44,9 +44,10 @@ exports.login = async (req, res, next) => {
     // Remove password before sending response
     group.password = undefined;
 
-    // Respond with group data (or set up your session/token here)
+    // Simple session - just return the group info
     return res.status(200).json({
       success: true,
+      token: group._id, // Use group ID as a simple token
       data: group
     });
   } catch (err) {
@@ -60,8 +61,26 @@ exports.login = async (req, res, next) => {
 // @access  Private
 exports.getMe = async (req, res, next) => {
   try {
-    // Note: req.group must be set by your auth layer (e.g. session)
-    const group = await Group.findById(req.group.id);
+    // Simple session check - expect group ID in Authorization header
+    const groupId = req.headers.authorization ? 
+      req.headers.authorization.replace('Bearer ', '') : null;
+    
+    if (!groupId) {
+      return res.status(401).json({
+        success: false,
+        error: 'Not authorized to access this route'
+      });
+    }
+    
+    const group = await Group.findById(groupId);
+    
+    if (!group) {
+      return res.status(404).json({
+        success: false,
+        error: 'Group not found'
+      });
+    }
+
     return res.status(200).json({
       success: true,
       data: group
@@ -71,11 +90,11 @@ exports.getMe = async (req, res, next) => {
   }
 };
 
-// @desc    Log group out
+// @desc    Log group out / clear cookie
 // @route   GET /api/auth/logout
 // @access  Private
 exports.logout = async (req, res, next) => {
-  // If you have a session, destroy it here
+  // Since we're not using JWT or sessions, just return success
   return res.status(200).json({
     success: true,
     data: {}
