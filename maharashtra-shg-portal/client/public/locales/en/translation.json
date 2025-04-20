@@ -1,0 +1,134 @@
+{
+    "header": {
+      "title": "Government of Maharashtra Department of Self Help Group & Self Employment",
+      "fontSizeIncrease": "Increase Font Size",
+      "fontSizeDecrease": "Decrease Font Size",
+      "fontSizeReset": "Reset Font Size",
+      "highContrast": "High Contrast",
+      "screenReader": "Screen Reader"
+    },
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "details": "Details",
+      "schemes": "Government Schemes"
+    },
+    "language": {
+      "en": "English",
+      "hi": "Hindi",
+      "mr": "Marathi"
+    },
+    "home": {
+      "welcome": "Welcome to Maharashtra SHG Portal",
+      "intro": "A platform for Self Help Groups in Maharashtra to access government schemes and resources",
+      "login": "Login",
+      "register": "Register",
+      "groupCode": "Group Code",
+      "password": "Password",
+      "forgotPassword": "Forgot Password?"
+    },
+    "register": {
+      "title": "Register New Member",
+      "personalInfo": "Personal Information",
+      "name": "Full Name",
+      "age": "Age",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "other": "Other",
+      "phone": "Phone Number",
+      "photo": "Upload Photo",
+      "address": "Address Information",
+      "addressLine": "Address",
+      "country": "Country",
+      "state": "State",
+      "city": "City",
+      "district": "District",
+      "taluka": "Taluka",
+      "ward": "Ward (if applicable)",
+      "groupInfo": "Group Information",
+      "groupCode": "Group Code",
+      "submit": "Submit",
+      "cancel": "Cancel"
+    },
+    "about": {
+      "title": "About Self Help Groups",
+      "objectives": {
+        "title": "Objectives",
+        "content": "Self Help Groups (SHGs) aim to promote savings among members, provide credit for productive and emergency needs, build social capital, and enhance livelihood opportunities.",
+        "lastReviewed": "Last Reviewed"
+      },
+      "history": {
+        "title": "History",
+        "content": "The SHG movement in Maharashtra began in the early 1990s with support from NABARD and various NGOs. The state government formalized support in 2000 with dedicated programs.",
+        "lastReviewed": "Last Reviewed"
+      },
+      "benefits": {
+        "title": "Benefits",
+        "content": "SHGs provide financial inclusion, entrepreneurship opportunities, social empowerment, and access to government schemes and subsidies.",
+        "lastReviewed": "Last Reviewed"
+      },
+      "carousel": {
+        "previous": "Previous",
+        "next": "Next"
+      }
+    },
+    "details": {
+      "title": "Group Details",
+      "instruction": "Enter your group code to view member details",
+      "search": "Search",
+      "noResults": "No members found",
+      "table": {
+        "name": "Name",
+        "age": "Age",
+        "gender": "Gender",
+        "phone": "Phone",
+        "role": "Role",
+        "joinDate": "Joined On",
+        "actions": "Actions"
+      },
+      "filter": "Filter",
+      "sort": "Sort"
+    },
+    "schemes": {
+      "title": "Government Schemes",
+      "search": "Search Schemes",
+      "filters": {
+        "title": "Filters",
+        "department": "Department",
+        "tags": "Tags",
+        "apply": "Apply Filters",
+        "reset": "Reset"
+      },
+      "card": {
+        "eligibility": "Eligibility",
+        "learnMore": "Learn More",
+        "resources": "Resources",
+        "fileType": "File Type",
+        "fileSize": "Size"
+      }
+    },
+    "common": {
+      "loading": "Loading...",
+      "error": "An error occurred",
+      "success": "Success",
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "cancel": "Cancel",
+      "back": "Back",
+      "next": "Next",
+      "submit": "Submit",
+      "close": "Close"
+    },
+    "footer": {
+      "rights": "All Rights Reserved",
+      "contact": "Contact Us",
+      "helpline": "Helpline",
+      "rti": "RTI",
+      "privacy": "Privacy Policy",
+      "disclaimer": "Disclaimer",
+      "accessibility": "Accessibility Statement"
+    }
+  }
